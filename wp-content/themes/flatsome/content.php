@@ -5,7 +5,7 @@
 
 global $flatsome_opt,$page;
 ?>
-<?php 
+<?php
 // BLOG NORMAL STYLE
 if(!isset($flatsome_opt['blog_style']) || $flatsome_opt['blog_style'] == 'blog-normal'){ ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -80,7 +80,7 @@ if(!isset($flatsome_opt['blog_style']) || $flatsome_opt['blog_style'] == 'blog-n
 </article><!-- #post-## -->
 
 
-<?php } 
+<?php }
 // BLOG LIST STYLE
 else if($flatsome_opt['blog_style'] == 'blog-list') { ?>
 <div class="blog-list-style">
@@ -127,10 +127,10 @@ else if($flatsome_opt['blog_style'] == 'blog-list') { ?>
 	</div><!-- .entry-content -->
 	</div><!-- .large-8 -->
 </div><!-- .row -->
-	
+
 </article><!-- #post-## -->
 </div><!-- .blog-list-style -->
-<?php } 
+<?php }
 
 
 // BLOG PINTEREST STYLE
@@ -183,7 +183,7 @@ else if($flatsome_opt['blog_style'] == 'blog-pinterest') { ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 	</div><!-- .entry-content -->
-	
+
 </article><!-- #post-## -->
 </div>
 <?php } ?>

@@ -169,8 +169,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 
 								<?php if (isset($flatsome_opt['search_pos']) && $flatsome_opt['search_pos'] == 'right') { ?>
 								<li class="search-dropdown">
-									<a href="#" class="nav-top-link icon-search"></a>
-									<div class="nav-dropdown">
+									<div class="">
 										<?php if(function_exists('get_product_search_form')) {
 											get_product_search_form();
 										} else {
