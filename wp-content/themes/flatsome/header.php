@@ -23,6 +23,13 @@ global $flatsome_opt;
 	<?php } else { ?><?php echo get_template_directory_uri(); ?>/apple-touch-icon-precomposed.png<?php } ?>" />
 
 	<?php wp_head(); ?>
+
+	<style type="text/css">
+		.page-template-page-transparent-header-php .before-sticky #masthead, .page-template-page-transparent-header-php .before-sticky .wide-nav, .page-template-page-transparent-header-light-php .before-sticky #masthead, .page-template-page-transparent-header-light-php .before-sticky .wide-nav {
+			background: rgba(14, 28, 48, .8) none repeat scroll 0 0 !important;
+			box-shadow: none !important;
+		}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -169,7 +176,8 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 
 								<?php if (isset($flatsome_opt['search_pos']) && $flatsome_opt['search_pos'] == 'right') { ?>
 								<li class="search-dropdown">
-									<div class="">
+									<a href="#" class="nav-top-link icon-search"></a>
+									<div class="nav-dropdown">
 										<?php if(function_exists('get_product_search_form')) {
 											get_product_search_form();
 										} else {

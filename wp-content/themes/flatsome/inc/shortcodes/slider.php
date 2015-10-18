@@ -21,7 +21,7 @@ function shortcode_ux_slider($atts, $content=null) {
 
 <div class="ux_slider_wrapper <?php echo $class; ?>">
 <div id="slider_<?php echo $sliderrandomid ?>" class="iosSlider default <?php if($mobile == "false") echo 'slider-hide-for-small'; ?>" style="<?php if($height) echo 'min-height:'.$height.'; height:'.$height; ?>">
-         <div class="slider <?php if($columns) echo 'columns-'.$columns; ?> <?php if($mobile == "false") echo 'hide-for-small'; ?>">
+         <div class="slider <?php if($columns) echo 'columns-'.$columns; ?> <?php if($mobile == "false") echo 'hide-for-small'; ?>" >
             <?php echo fixShortcode($content); ?>
          </div>
         <div class="sliderControlls <?php if(!$mobile) echo 'hide-for-small'; ?> <?php echo $nav_color; ?> <?php if($hide_nav == 'false') echo 'dont_hide_nav'; ?>">

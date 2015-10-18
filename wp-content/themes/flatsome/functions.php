@@ -473,6 +473,7 @@ include_once('inc/shortcodes/products.php');
 include_once('inc/shortcodes/product_flip.php');
 include_once('inc/shortcodes/product_categories.php');
 include_once('inc/shortcodes/featured_items.php');
+include_once('inc/shortcodes/background_slide.php');
 
 /* SHORTCODE INSERTER */
 if(is_admin()){

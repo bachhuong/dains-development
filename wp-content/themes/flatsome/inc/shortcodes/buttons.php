@@ -6,11 +6,12 @@ function button_shortcode( $atts, $content = null ){
     'style' => '',
     'size' => '',
     'link' => '',
-    'target' => ''
+    'target' => '',
+      'inline_style' => ''
   ), $atts ) );
 
 if($target) $target = 'target="'.$target.'"';
-return '<a href="'.$link.'" class="button '.$size.' '.$style.'" '.$target.'>'.$text.'</a>';
+return '<a href="'.$link.'" class="button '.$size.' '.$style.'" '.$target.' style="' . $inline_style . '">'.$text.'</a>';
 }
 add_shortcode('button', 'button_shortcode');
 
