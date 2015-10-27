@@ -19,7 +19,7 @@
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
 	define('DB_NAME', 'dainganson2');
 } else {
-	define('DB_NAME', 'dainhanson');
+	define('DB_NAME', 'dai82f05_test');
 }
 
 /** MySQL database username */
