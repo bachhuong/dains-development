@@ -79,17 +79,23 @@ extract( shortcode_atts( array(
     <script type="text/javascript">
         jQuery(function($){
             var listBgs = [];
-            var listBgsIndex = 0;
+            var listBgsIndex = 1;
             <?php foreach ($bgs as $item) :?>
             listBgs.push('<?php echo $item ?>');
             <?php endforeach ?>
 
             setInterval(function() {
+
+                var backgroundItem = $('.bach-background-slide<?php if($id) echo "-".$id ?>');
                 if(listBgsIndex >= listBgs.length) {
                     listBgsIndex = 0;
                 }
-                $('.bach-background-slide<?php if($id) echo "-".$id ?>').css('background-image', 'url(' + listBgs[listBgsIndex] + ')');
+                $(backgroundItem).hide();
+                $(backgroundItem).css('background-image', 'url(' + listBgs[listBgsIndex] + ')');
+                $(backgroundItem).fadeIn(2000);
+
                 listBgsIndex++;
+
             }, <?php echo !empty($bgs_interval) ? $bgs_interval : 5000 ?>);
         });
     </script>

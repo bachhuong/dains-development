@@ -24,12 +24,6 @@ global $flatsome_opt;
 
 	<?php wp_head(); ?>
 
-	<style type="text/css">
-		.page-template-page-transparent-header-php .before-sticky #masthead, .page-template-page-transparent-header-php .before-sticky .wide-nav, .page-template-page-transparent-header-light-php .before-sticky #masthead, .page-template-page-transparent-header-light-php .before-sticky .wide-nav {
-			background: rgba(14, 28, 48, .8) none repeat scroll 0 0 !important;
-			box-shadow: none !important;
-		}
-	</style>
 </head>
 
 <body <?php body_class(); ?>>
