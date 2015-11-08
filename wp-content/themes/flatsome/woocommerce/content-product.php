@@ -98,7 +98,7 @@ if($product->is_type( array( 'variable', 'grouped') )) wp_enqueue_script('wc-add
           <div class="tx-div small"></div>
           <a href="<?php the_permalink(); ?>"><p class="name"><?php the_title(); ?></p></a>
           <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
-	     
+
       </div><!-- text-center -->
 
      <?php } 

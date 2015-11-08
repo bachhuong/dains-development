@@ -798,6 +798,12 @@ class Options_Machine {
 		if($mod == 'font'){
 			$uploader .= '<style>@font-face{ font-family: customFont; src: url('. $val .'); } </style>';
 		}
+		if($mod == 'font2'){
+			$uploader .= '<style>@font-face{ font-family: customFont2; src: url('. $val .'); } </style>';
+		}
+		if($mod == 'font3'){
+			$uploader .= '<style>@font-face{ font-family: customFont3; src: url('. $val .'); } </style>';
+		}
 
 
 		//Preview

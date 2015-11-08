@@ -44,6 +44,8 @@ if (!function_exists('of_options'))
 		//$google_fonts = array('Open Sans' => 'Open Sans','Sacramento' => 'Sacramento','Droid Sans' =>'Droid Sans','Oswald' => 'Oswald','Droid Serif' => 'Droid Serif','Lato' => 'Lato','Francois One' => 'Francois One','Raleway' => 'Raleway','Arvo' => 'Arvo','Roboto Slab' => 'Roboto Slab','Noto Serif' => 'Noto Serif','Noto Sans' =>'Noto Sans','Abril Fatface'=>'Abril Fatface','Clicker Script' => 'Clicker Script');
 		$google_fonts = array(
 						'customFont' => 'Custom Font',
+						'customFont2' => 'Custom Font 2',
+						'customFont3' => 'Custom Font 3',
 						'arial'=>'Arial',
 						'verdana'=>'Verdana, Geneva',
 						'trebuchet'=>'Trebuchet',
@@ -1325,6 +1327,24 @@ $of_options[] = array(
 		"std" 		=> "",
 	    "mod"       => "font",
 		"type" 		=> "media"
+);
+// Custom font
+$of_options[] = array(
+	"name" 		=> "Upload Custom Font 2",
+	"desc" 		=> "Upload Custom Font file here. (.ttf, .otf). You can select this font by selecting 'Custom font' in the settings above, or by CSS: h1 {font-family: customFont} ",
+	"id" 		=> "custom_font_2",
+	"std" 		=> "",
+	"mod"       => "font2",
+	"type" 		=> "media"
+);
+// Custom font
+$of_options[] = array(
+	"name" 		=> "Upload Custom Font 3",
+	"desc" 		=> "Upload Custom Font file here. (.ttf, .otf). You can select this font by selecting 'Custom font' in the settings above, or by CSS: h1 {font-family: customFont} ",
+	"id" 		=> "custom_font_3",
+	"std" 		=> "",
+	"mod"       => "font3",
+	"type" 		=> "media"
 );
 
 

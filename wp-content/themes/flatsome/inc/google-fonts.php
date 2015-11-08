@@ -9,6 +9,22 @@ if($flatsome_opt['custom_font']){
 	add_action('wp_head','ux_add_custom_font');
 }
 
+if($flatsome_opt['custom_font_2']){
+	function ux_add_custom_font_2(){
+		global $flatsome_opt;
+		echo '<style>@font-face{ font-family: customFont2; src: url('.$flatsome_opt['custom_font_2'].'); }</style>';
+	}
+	add_action('wp_head','ux_add_custom_font_2');
+}
+
+if($flatsome_opt['custom_font_3']){
+	function ux_add_custom_font_3(){
+		global $flatsome_opt;
+		echo '<style>@font-face{ font-family: customFont3; src: url('.$flatsome_opt['custom_font_3'].'); }</style>';
+	}
+	add_action('wp_head','ux_add_custom_font_3');
+}
+
 /* Load google fonts */
 if(isset($flatsome_opt['type_headings']) && !$flatsome_opt['disable_fonts']){
 $customfont = '';

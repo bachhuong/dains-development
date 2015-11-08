@@ -108,3 +108,11 @@ function woo_add_custom_general_fields_save( $post_id ){
         update_post_meta( $post_id, '_dong_goi_field', esc_attr( $woocommerce_text_field ) );
 
 }
+
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+function sb_woo_remove_reviews_tab($tabs) {
+
+    unset($tabs['reviews']);
+
+    return $tabs;
+}
