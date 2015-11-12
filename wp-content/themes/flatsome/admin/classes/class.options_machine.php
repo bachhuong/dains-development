@@ -586,9 +586,18 @@ class Options_Machine {
 					$output .= '<div class="select_wrapper">';
 					$output .= '<select class="select of-input google_font_select" name="'.$value['id'].'" id="'. $value['id'] .'">';
 					foreach ($value['options'] as $select_key => $option) {
-						$output .= '<option value="'.$select_key.'" ' . selected((isset($smof_data[$value['id']]))? $smof_data[$value['id']] : "", $option, false) . ' />'.$option.'</option>';
+						$selected = selected((isset($smof_data[$value['id']]))? $smof_data[$value['id']] : "", $option, false);
+						if (empty($selected)) {
+							if ($smof_data[$value['id']] == $select_key) {
+								$selected = ' selected="selected"';
+							}
+						}
+
+						$output .= '<option value="'.$select_key.'" ' . $selected . ' />'.$option.'</option>';
 					} 
 					$output .= '</select></div>';
+
+					//var_dump($smof_data[$value['id']]);die;
 					
 					if(isset($value['preview']['text'])){
 						$g_text = $value['preview']['text'];
